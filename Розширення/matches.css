@@ -1,0 +1,118 @@
+#ask__container{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 40px;
+	background: yellow;
+	
+}
+#ask__container:before{
+	content: "Запитайте!";
+	box-sizing: border-box;
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	right: 70px;
+	text-align: center;
+	padding: 8px;
+	font-size: 18px;
+	background: #5184d6;
+	color: white;
+	border-radius: 25px;
+}
+#ask__container:after{
+	content: '';
+	width: 0;
+    height: 0;
+    
+    border-right: 15px solid transparent;
+    border-bottom: 18px solid #5184d6;
+	position: absolute;
+	top: 10px;
+	right: 62px;
+	
+}
+.envelope {
+  width: 100%;
+  height: 100%;
+  background-color: #5184d6;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.envelope-top {
+  width: 50px;
+  height: 50px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: -35px;
+  z-index: 1000;
+  background-color: #5184d6;
+  transform: rotate(45deg);
+}
+
+.envelope-bottom {
+  width: 50px;
+  height: 50px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  bottom: -35px;
+  transform: rotate(225deg);
+}
+.chat-container{
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	color: white;
+	align-items: center;
+	z-index: 300000;
+	width: 210px;
+	height: 300px;
+	box-sizing: border-box;
+	background-color: #5184d6;
+	bottom: 50px;
+	right: 60px;
+	font-size: 18px;
+	padding: 5px 10px;
+
+}
+.d-block{
+	display: flex;
+}
+h4{
+	color: white!important;
+}
+#chatInp{
+	width: 180px;
+	height: 180px;
+	background: white;
+}
+#chatBtn{
+	background: white!important;
+	color: #5184d6!important;
+	width: 100px;
+	height: 35px;
+}
+
+.envelope:after{
+	content: '1';
+	font-size: 10px;
+	text-align: center;
+	position: absolute;
+	z-index: 20000;
+	top: 1px;
+	right: 1px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-color: #eb5756;
+	color: white;
+}
+
